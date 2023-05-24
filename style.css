@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers button{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: gray;
+    transition: .5s ease;
+}
+
+.numbers .activeButton{
+    border-color: rgb(110, 127, 255);
+    transition: .5s ease;
+}
+
+.numbers hr{
+    height: 4px;
+    width: 100px;
+    background-color: rgb(241, 238, 238);
+    border-style: none;
+    transition: .5s ease;
+}
+
+.numbers .activeHr{
+    background-color: rgb(110, 127, 255);
+    transition: .5s ease;
+}
+
+.buttons button{
+    width: 70px;
+    height: 40px;
+    margin: 30px 20px;
+    background-color: whitesmoke;
+    border-style: none;
+    border-radius: 10%;
+}
+
+.buttons .activePrevNext{
+    background-color: rgb(110, 127, 255);
+}
+
+.buttons button:active{
+    transform: scale(0.98);
+}
